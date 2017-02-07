@@ -1,0 +1,102 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.bg {
+    background-color: #ccc;
+    height: 50%;
+}
+
+.content {
+    height: 50%;
+    position: relative;
+}
+
+.form {
+    max-width: 340px;
+    background-color: orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.form .form-group {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form .form-group:last-child {
+    margin-bottom: 0px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    border: 3px solid #000;
+    border-radius: 8px;
+    padding: 6px 16px;
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: #FED517;
+    cursor: pointer;
+    display: inline-block;
+    border: 3px solid #000;
+    border-radius: 8px;
+    position: relative;
+    text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
+    -webkit-text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
+    -moz-text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
+    *filter: Glow(color = #fff, strength = 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.btn:after {
+    height: 15%;
+    position: absolute;
+    background-color: #FFF;
+    content: '';
+    border-top: 3px solid #000;
+    display: inline-block;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+}
+
+.age,
+.sex {
+    display: inline-block;
+    width: 40%;
+}
+
+.age {
+    float: left;
+}
+
+.sex {
+    float: right;
+}
+
+.btn-submit {
+    width: 40%;
+    height: 36px;
+}
