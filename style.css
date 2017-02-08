@@ -32,7 +32,7 @@ body {
 
 .form .form-group {
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
 }
 
 .form .form-group:last-child {
@@ -40,7 +40,7 @@ body {
 }
 
 .form-group.title {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     font-size: 20px;
 }
 
@@ -101,15 +101,17 @@ input:focus {
 .age,
 .sex {
     display: inline-block;
-    width: 45%;
+    /*width: 48%;*/
 }
 
 .age {
     float: left;
+    width: 55%;
 }
 
 .sex {
     float: right;
+    width: 40%;
 }
 
 .sex div {
