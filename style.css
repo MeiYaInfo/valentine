@@ -7,12 +7,16 @@ body {
 }
 
 .bg {
-    background-color: #ccc;
-    height: 50%;
+    background-color: #FF4945;
+    height: 60%;
+    background-image: url(./bg.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
 }
 
 .content {
-    height: 50%;
+    height: 40%;
     position: relative;
 }
 
@@ -22,17 +26,22 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 60%;
+    width: 280px;
     transform: translate(-50%, -50%);
 }
 
 .form .form-group {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .form .form-group:last-child {
     margin-bottom: 0px;
+}
+
+.form-group.title {
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 input {
