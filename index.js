@@ -40,7 +40,7 @@ $(function () {
 
     // 点击提交按钮
     $('.btn-submit').click(function () {
-        var name = $('#name').val(),
+        var name = encodeURI($('#name').val()),
             age = $('#ageselect').val(),
             sex = $('.sex').find('.selected').data('sex');
         if (name == '') {

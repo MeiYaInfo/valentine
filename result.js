@@ -15,7 +15,7 @@ $(function () {
 
         created: function () {
             var self = this;
-            this.name = this.GetQueryString('name');
+            this.name = decodeURI(this.GetQueryString('name'));
             this.age = this.GetQueryString('age');
             this.sex = this.GetQueryString('sex');
             var queryData = {
@@ -51,7 +51,7 @@ $(function () {
                 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
                 var r = window.location.search.substr(1).match(reg);
                 if (r != null) {
-                    return unescape(r[2]);
+                    return decodeURI(r[2]);
                 };
                 return null;
             }
