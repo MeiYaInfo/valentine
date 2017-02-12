@@ -4,29 +4,67 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
+    font-family: HYHeiLiZhiTiJ;
+}
+
+@font-face {
+    font-family: 'HYHeiLiZhiTiJ';
+    src: url('./HYHeiLiZhiTiJ.ttf');
+}
+
+::-webkit-input-placeholder,
+#age_dummy,
+select {
+    font-family: 'HYHeiLiZhiTiJ';
 }
 
 .bg {
     background-color: #FF4945;
     height: 60%;
-    background-image: url(./bg.png);
+    background-image: url(./indexbg.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
     min-height: 280px;
 }
 
+.bgresult {
+    background-image: url(./result.png);
+    min-height: 440px;
+    position: relative;
+}
+
+.result {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 55%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.result span {
+    flex: 1;
+    min-width: 240px;
+}
+
 .content {
     height: 40%;
     position: relative;
-    min-height: 200px;
+    min-height: 270px;
+    background-image: url(./indexfooter.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
 }
 
 .form {
     min-width: 240px;
     max-width: 340px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     width: 280px;
     transform: translate(-50%, -50%);
@@ -46,13 +84,25 @@ body {
     font-size: 20px;
 }
 
-input {
+.form-group.footer {
+    margin-bottom: 6px;
+    font-size: 20px;
+    color: #686868;
+}
+
+input,
+select {
     box-sizing: border-box;
     width: 100%;
     border: 3px solid #000;
     border-radius: 8px;
     padding: 6px 16px;
     font-size: 24px;
+}
+
+#ageselect_dummy {
+    /*height: 44px;*/
+    display: none;
 }
 
 input:focus {
@@ -103,17 +153,16 @@ input:focus {
 .age,
 .sex {
     display: inline-block;
-    /*width: 48%;*/
 }
 
 .age {
     float: left;
-    width: 55%;
+    width: 48%;
 }
 
 .sex {
     float: right;
-    width: 40%;
+    width: 48%;
 }
 
 .sex div {
@@ -129,14 +178,14 @@ input:focus {
     cursor: pointer;
 }
 
-.sex .male {
+.sex .female {
     float: left;
     border-right: 1.5px solid #000;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-.sex .female {
+.sex .male {
     float: right;
     border-left: 1.5px solid #000;
     border-top-left-radius: 0;
@@ -154,3 +203,83 @@ input:focus {
     font-size: 24px;
     line-height: 40px;
 }
+
+.resultcontent {
+    background-color: #FF4945;
+    background-image: none;
+}
+
+.repeat,
+.save,
+.share {
+    box-sizing: border-box;
+    height: 45px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.repeat {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.save {
+    width: 55%;
+}
+
+.share {
+    width: 40%;
+    background-color: #CFCFCF;
+}
+
+.mcover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 20000;
+    display: none;
+}
+
+.mcover .mcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    color: #FFF;
+    text-align: center;
+}
+
+.mcover .mcontent .mclose {
+    width: 30px;
+    height: 30px;
+    /*line-height: 24px;*/
+    color: #FFF;
+    font-size: 24px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    border: 3px solid #FFF;
+    border-radius: 24px;
+    text-align: center;
+    background-color: #000;
+    cursor: pointer;
+    display:inline-block;
+    box-sizing: border-box;
+}
+
+.mcover .mcontent img {
+    width: 100%;
+}
+
+/*@media screen and (min-height: 660px) {
+    .bg {
+        background-color: lightblue;
+        background-size: 100% auto;
+    }
+}*/

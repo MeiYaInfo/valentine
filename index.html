@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mobiscroll-2.13.2.full.min.css">
     <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/blueimp-md5/2.6.0/js/md5.min.js"></script>
     <script src="./mobiscroll-2.13.2.full.min.js"></script>
     <script src="./index.js"></script>
     <title>单身狗的春天在哪里</title>
@@ -20,21 +19,25 @@
                 输入信息查看你的真心人在哪里
             </div>
             <div class="form-group">
-                <input type="text" placeholder="输入单身狗的姓名">
+                <input id="name" type="text" maxlength="20" placeholder="输入单身狗的姓名">
             </div>
             <div class="form-group clearfix">
                 <div class="age">
-                    <!-- <input type="text" placeholder="年龄"> -->
-                    <select name="age" id="age">
+                    <input type="text" id="ageinput" placeholder="年龄">
+                    <select name="age" id="ageselect">
+                        <option value="">年龄</option>
                     </select>
                 </div>
                 <div class="sex">
-                    <div class="male selected">男</div>
-                    <div class="female">女</div>
+                    <div class="female selected" data-sex="0">软妹</div>
+                    <div class="male" data-sex="1">壮汉</div>
                 </div>
             </div>
             <div class="form-group">
                 <span class="btn btn-submit">寻找真心人</span>
+            </div>
+            <div class="form-group footer">
+                欢迎关注：你丫才美工
             </div>
         </div>
     </div>
