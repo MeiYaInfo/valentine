@@ -30,8 +30,9 @@ select {
 
 .bgresult {
     background-image: url(./result.png);
-    min-height: 440px;
+    min-height: 400px;
     position: relative;
+    height: 70%;
 }
 
 .result {
@@ -53,7 +54,7 @@ select {
 .content {
     height: 40%;
     position: relative;
-    min-height: 270px;
+    /*min-height: 270px;*/
     background-image: url(./indexfooter.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -208,6 +209,7 @@ input:focus {
 .resultcontent {
     background-color: #FF4945;
     background-image: none;
+    height: 30%
 }
 
 .repeat,
@@ -254,6 +256,11 @@ input:focus {
     opacity: 1;
     color: #FFF;
     text-align: center;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
 }
 
 .mcover .mcontent .mclose {

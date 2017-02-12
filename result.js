@@ -18,6 +18,7 @@ $(function () {
             this.name = decodeURI(this.GetQueryString('name'));
             this.age = this.GetQueryString('age');
             this.sex = this.GetQueryString('sex');
+            $('title').html(this.name + '的春天竟然在......');
             var queryData = {
                 name: this.name,
                 age: this.age,
@@ -72,7 +73,7 @@ $(function () {
 
             // 点击关闭模态框
             $('.mclose').click(function () {
-                $('.mcover').hide();
+                $('.mcover').fadeOut();
             })
 
             // 再测一次
