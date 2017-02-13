@@ -61,24 +61,33 @@ $(function () {
 
         ready: function () {
             $(".result span").css({
-                fontSize: $(".result span").height() * 0.7 + "px",
+                fontSize: $(".result span").height() * 0.6 + "px",
                 lineHeight: $(".result span").height() + "px"
             });
-            var img = new Image();
-            img.src = "./save.png";
+
+            // 预加载
+            // var img = new Image();
+            // img.src = "./public/save.png";
             $('.save').click(function () {
-                $('.mcover').fadeIn();
-                // $('.mcover').css('display', 'block');
+                $('#mcover1').fadeIn();
             })
 
             // 点击关闭模态框
             $('.mclose').click(function () {
-                $('.mcover').fadeOut();
+                $('#mcover1').fadeOut();
             })
 
             // 再测一次
             $('.repeat').click(function () {
                 window.location.href = './index.html';
+            })
+
+            // 分享
+            $('.share').click(function () {
+                $('#mcover2').fadeIn();
+                $('#mcover2').click(function () {
+                    $('#mcover2').fadeOut();
+                })
             })
 
         }

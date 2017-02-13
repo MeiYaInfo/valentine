@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./mobiscroll-2.13.2.full.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobiscroll-2.13.2.full.min.css">
     <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/vue/1.0.28/vue.min.js"></script>
-    <script src="./mobiscroll-2.13.2.full.min.js"></script>
-    <script src="./result.js"></script>
+    <script src="./js/mobiscroll-2.13.2.full.min.js"></script>
+    <script src="./js/result.js"></script>
     <title>单身狗的春天在哪里</title>
 </head>
 <body>
@@ -21,6 +21,7 @@
             <span>{{location}}</span>
             <span>{{event}}</span>
             <span>{{people}}</span>
+            <span>TA都将会是你的真心人</span>
             <span>不要错过机会</span>
         </div>
     </div>
@@ -36,11 +37,16 @@
             </div>
         </div>
     </div>
-    <div class="mcover">
+    <div id="mcover1" class="mcover">
         <div class="mcontent">
             <span class="mclose">X</span>
-            <img src="./save.png" alt="图片">
+            <img src="./public/save.png" alt="图片">
             <span>长按图片保存到手机</span>
+        </div>
+    </div>
+    <div id="mcover2" class="mcover">
+        <div class="mshare">
+            <img src="./public/share.png" alt="分享">
         </div>
     </div>
 

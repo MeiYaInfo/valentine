@@ -1,7 +1,8 @@
 $(function () {
 
     // 首次点击年龄载入年龄数据，并设置初始值为20
-    $('#ageinput').click(function () {
+    $('#ageinput').click(function (e) {
+        e.preventDefault();
         $('#ageinput').hide();
         $('#ageselect_dummy').show();
         $('#ageselect_dummy').click();
