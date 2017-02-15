@@ -52,6 +52,21 @@ $(function () {
         }
         window.location.href = './result.html?name=' + name + '&age=' + age + '&sex=' + sex;
     })
+
+    // 点击音乐开关
+    $('html').one('touchstart',function(){
+        document.getElementById("music").play();
+    });
+    $("#audio_btn").click(function(){
+        var music = document.getElementById("music");
+        if (music.paused) {
+            music.play();
+            $("#music_btn").attr("src","./public/music-on.png");
+        } else {
+            music.pause();
+            $("#music_btn").attr("src","./public/music-off.png");
+        }
+    });
     
 });
 

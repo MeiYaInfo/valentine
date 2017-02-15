@@ -89,7 +89,8 @@ select {
 .form-group.footer {
     margin-bottom: 6px;
     font-size: 20px;
-    color: #686868;
+    color: #000;
+    opacity: .6;
 }
 
 input,
@@ -252,7 +253,7 @@ input:focus {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 70%;
+    width: 250px;
     transform: translate(-50%, -50%);
     opacity: 1;
     color: #FFF;
@@ -283,13 +284,19 @@ input:focus {
 }
 
 .mcover .mcontent img {
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .mcover .mshare img {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 40px;
     width: 100px;
     height: 120px;
+}
+
+#audio_btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
